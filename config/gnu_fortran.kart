@@ -1,0 +1,10 @@
+[compiler]
+exe=/usr/bin/gfortran
+options-always=-c -fPIC -ffree-form -ffree-line-length-none
+options-default=-O3
+source-file-extension=F90
+
+[linker]
+exe=/usr/bin/gfortran
+options-always=-shared -fPIC
+options-default=

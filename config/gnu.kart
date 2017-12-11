@@ -1,0 +1,10 @@
+[compiler]
+exe=/usr/bin/g++
+options-always=-c
+options-default=-g -std=c++11 -Wall
+source-file-extension=cpp
+
+[linker]
+exe=/usr/bin/g++
+options-always=-shared -fPIC
+options-default=-g

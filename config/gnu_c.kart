@@ -1,0 +1,10 @@
+[compiler]
+exe=/usr/bin/gcc
+options-always=-c
+options-default=-g -std=c99 -Wall
+source-file-extension=c
+
+[linker]
+exe=/usr/bin/gcc
+options-always=-shared -fPIC
+options-default=-g
