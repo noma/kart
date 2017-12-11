@@ -1,0 +1,15 @@
+addons:
+  apt:
+    sources:
+      - boost-latest
+    packages:
+      - libboost-dev
+      - gcc
+      - g++
+  
+script:
+  - mkdir build.release
+  - cd build.release
+  - cmake -DCMAKE_BUILD_TYPE=Release -DKART_BUILD_EXAMPLES=TRUE ..
+  - make -j
+
