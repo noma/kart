@@ -48,7 +48,7 @@ include_directories(${PROJECT_SOURCE_DIR}/include ${THIRDPARTY_DIR}/process ${Bo
 
 # see CMakeLists.txt in src
 add_subdirectory(src)
-add_subdirectory(thirdparty/bmt)
+#add_subdirectory(thirdparty/bmt)
 
 # Doxygen target 'make doc'
 find_package(Doxygen)
