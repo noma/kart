@@ -42,12 +42,18 @@ Please study the examples to quickly learn the basic concepts.
 	  Boost v1.64 onwards to which KART the code will eventually be migrated
 
 ```
-mkdir -p build.release
+mkdir build.release
 cd build.release
-cmake -DKART_BUILD_EXAMPLES=TRUE -DCMAKE_BUILD_TYPE=Release ..
+cmake -DCMAKE_BUILD_TYPE=Release -DKART_BUILD_EXAMPLES=TRUE ..
 make -j
 cd ..
 ```
+
+| CMake Option             | Default | Description                   |
+|--------------------------|---------|-------------------------------|
+| `KART_BUILD_EXAMPLES`    | OFF     | Build example applications.   |
+| `KART_ENABLE_FORTRAN`    | OFF     | Enable to build the examples. |
+| `KART_ENABLE_MIC_BUILD`  | OFF     | Enable FORTRAN support.       |
 
 ## Running the Examples
 
