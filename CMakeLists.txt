@@ -11,7 +11,6 @@ if(KART_ENABLE_FORTRAN)
 	enable_language(Fortran)
 endif()
 
-
 # libkart name
 set(LIBRARY_NAME kart)
 set(LIBRARY_NAME_C kartc)
@@ -34,6 +33,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # allow cross-compiling for Intel Xeon Phi (Knights Corner) accelerators
 # TODO: check for intel compiler
+option(KART_ENABLE_MIC_BUILD "Cross compile for Intel Xeon Phi Coprocessor (KNC)" OFF)
 if(KART_ENABLE_MIC_BUILD)
 	MESSAGE("Cross-compiling for MIC, make sure to use a suitable (Intel) compiler by exporting CC and CXX.")
 	list(APPEND CMAKE_CXX_FLAGS "-mmic" ${CMAKE_CXX_FLAGS})
