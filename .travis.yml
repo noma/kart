@@ -3,10 +3,11 @@ addons:
     sources:
       - boost-latest
     packages:
-      - libboost-dev
       - gcc
       - g++
-  
+      - doxygen
+      - libboost-all-dev
+
 script:
   - mkdir build.release
   - cd build.release
