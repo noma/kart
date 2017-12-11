@@ -1,4 +1,6 @@
 # KART - Kernel compilation At RunTime
+[![Build Status](https://travis-ci.org/noma/kart.svg?branch=master)](https://travis-ci.org/noma/kart)
+[![Licence](https://img.shields.io/badge/license-BSL-blue.svg?style=flat)](LICENSE_1_0.txt)
 
 NOTE: 
 - This code is **work in progress**, the API might change.
