@@ -106,7 +106,7 @@ Toolsets contain paths to compiler and linker executables, was well as
 options. They often are paltform-specific and reside in files that are used to
 instantiate `toolset` API objects.
 
-- See the ``*.kart` files in `config/`.
+- See the `*.kart` files in `config/`.
 - Executable paths for linker/compiler must be absolute
     - use e.g. `which gcc` to find out
 - In principle, any language/compiler/linker/options configuration can be used, 
