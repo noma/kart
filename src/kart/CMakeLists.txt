@@ -14,14 +14,14 @@ message("CMAKE_BINARY_DIR: " ${CMAKE_BINARY_DIR})
 set(KART_SRC constants.cpp log.cpp log_level.cpp misc.cpp program.cpp toolset.cpp)
 message("LIBRARY_NAME: " STATIC ${LIBRARY_NAME})
 add_library(${LIBRARY_NAME} STATIC ${KART_SRC})
-target_include_directories(${LIBRARY_NAME} PUBLIC include)
+target_include_directories(${LIBRARY_NAME} PUBLIC ${PROJECT_SOURCE_DIR}/include)
 target_link_libraries(${LIBRARY_NAME} dl ${Boost_LIBRARIES})
 
 # C wrapper library
 message("LIBRARY_NAME_C: " ${LIBRARY_NAME_C})
 #add_library(${LIBRARY_NAME_C} STATIC ${KART_SRC} c_api.cpp)
 add_library(${LIBRARY_NAME_C} STATIC c_api.cpp)
-target_include_directories(${LIBRARY_NAME_C} PUBLIC include)
+target_include_directories(${LIBRARY_NAME_C} PUBLIC ${PROJECT_SOURCE_DIR}/include)
 target_link_libraries(${LIBRARY_NAME_C} dl ${Boost_LIBRARIES} ${LIBRARY_NAME})
 
 # Fortran Module
