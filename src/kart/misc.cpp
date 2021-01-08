@@ -8,6 +8,7 @@
 #include "kart/log.hpp"
 
 #include <iostream>
+#include <sstream>
 
 namespace kart {
 
